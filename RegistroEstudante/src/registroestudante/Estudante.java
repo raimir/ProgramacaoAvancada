@@ -41,4 +41,16 @@ public abstract class Estudante {
         return qtdaprovada;
     }
     
+    public String retornaString() {
+        String var = "Matricula: " + matricula + "\n"
+        + "Nome: " + nome + "\n"
+        + "Curso: " + curso + "\n"
+        + "Ano de ingresso: " + anoingresso + "\n"
+        + "Valor mensalidade: " + mensalidade + "\n"
+        + "Qtd disciplinas aprovadas: " + qtdaprovada + "\n"
+        + "Tempo de curso: " + calcularTempo() + "\n"
+        + "Qtd de créditos: " + calcularCredito() + "\n";
+        return var;
+    }
+    
 }

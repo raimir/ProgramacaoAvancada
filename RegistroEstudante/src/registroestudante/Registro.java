@@ -21,9 +21,8 @@ public class Registro {
     }
     
     public static void main(String[] args) {
-       Registro reg = new Registro("123", "abc", "S.I", 2010, 800.97, 5);
-       System.out.println( "Créditos do Aluno: " + reg.calcularCredito() );
-       System.out.println( "Tempo na Faculdade: " + reg.calcularTempo() + " anos." );
+       Estudante reg = new EstudanteGraduacao("123", "abc", "S.I", 2010, 800.97, 5);
+       System.out.println(reg.retornaString());
     }
     
     /**
