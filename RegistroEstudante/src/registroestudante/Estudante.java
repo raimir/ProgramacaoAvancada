@@ -42,7 +42,7 @@ public abstract class Estudante {
     }
     
     public String retornaString() {
-        String var = "Matricula: " + matricula + "\n"
+       return "Matricula: " + matricula + "\n"
         + "Nome: " + nome + "\n"
         + "Curso: " + curso + "\n"
         + "Ano de ingresso: " + anoingresso + "\n"
@@ -50,7 +50,54 @@ public abstract class Estudante {
         + "Qtd disciplinas aprovadas: " + qtdaprovada + "\n"
         + "Tempo de curso: " + calcularTempo() + "\n"
         + "Qtd de créditos: " + calcularCredito() + "\n";
-        return var;
     }
+    
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public double getMensalidade() {
+        return mensalidade;
+    }
+
+    public void setMensalidade(double mensalidade) {
+        this.mensalidade = mensalidade;
+    }
+
+    public int getQtdaprovada() {
+        return qtdaprovada;
+    }
+
+    public void setQtdaprovada(int qtdaprovada) {
+        this.qtdaprovada = qtdaprovada;
+    }
+
+    public int getAnoingresso() {
+        return anoingresso;
+    }
+
+    public void setAnoingresso(int anoingresso) {
+        this.anoingresso = anoingresso;
+    }    
     
 }

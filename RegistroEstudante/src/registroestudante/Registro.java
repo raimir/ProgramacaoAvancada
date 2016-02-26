@@ -1,5 +1,6 @@
 package registroestudante;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class Registro {
@@ -21,8 +22,11 @@ public class Registro {
     }
     
     public static void main(String[] args) {
-       Estudante reg = new EstudanteGraduacao("123", "abc", "S.I", 2010, 800.97, 5);
-       System.out.println(reg.retornaString());
+       ArrayList<Estudante> estudantes = new ArrayList<Estudante>(); 
+       Estudante study = new EstudanteGraduacao("12345", "João", "S.I", 2010, 800.97, 5);
+       System.out.println(study.retornaString());
+       study = new EstudantePos("23456", "Pedro", "C.C", 2012, 925.14 , 6);
+       System.out.println(study.retornaString());
     }
     
     /**
